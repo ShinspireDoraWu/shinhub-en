@@ -238,6 +238,6 @@
   align-self: center !important;
   color: #161819;
   text-align: center;
-  white-space: nowrap;max-width:220px;
+  white-space: nowrap;width:220px;
   align-items: center;display:block;
 }
