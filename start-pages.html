@@ -1,0 +1,124 @@
+<html lang="en">
+    <head>        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+        ShinHub
+        </title><meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/announcement-pages.css" />
+        <link rel="stylesheet" href="css/jquery.modal.min.css" />
+    </head>
+
+    <body class="bg-page">
+
+      <nav class="navbar">
+            <a href="index.html" class="nav-item">
+              <img src="images/home.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Home</div>
+            </a>
+            <a href="coupons-list.html" class="nav-item">
+              <img src="images/announcement.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Coupons</div>
+            </a>
+            <a href="activity-list.html" class="nav-item">
+              <img src="images/activity.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Events</div>
+            </a>
+            <a href="my.html" class="nav-item">
+                <img src="images/my-hover.svg" alt="" class="nav-icon" />
+                <div class="nav-label active">Account</div>
+              </a>
+          </nav>
+          
+      <section class="page-header">
+        <a href="start-list.html"><img src="images/back.svg"></a>
+        <h2>Event Details</h2>
+      </section>
+      <div class="pages-sign-up button-group">
+        <a href="#" class="delete-but-button">Delete</a>
+        <a href="#" class="event-register-button">Edit</a>
+      </div>
+
+      <section class="container-page m-top68">
+          <h1 class="event-title">Annual Event Discussion</h1>
+          <div class="event-datetime">
+            <img src="images/date-icon.svg" alt="" class="event-datetime-icon">
+            <div class="event-datetime-text">2024.05.05 Sun 11:30</div>
+          </div>
+          <div class="event-location">
+           <img src="images/map-icon.svg" alt="" class="event-location-icon">
+           <div class="event-location-text">Howard Plaza Hotel Taipei</div>
+          </div>
+
+          <p class="announcement-content">
+              Event description, event description, event description, event description, event description.
+          </p>     
+          <p class="announcement-content">Initiator: Secretary Chen</p> 
+          
+          <div class="my-activities">
+              <img src="images/Users.svg"/>
+              <h2 class="my-activities__label">Invitation List</h2>
+              <p>5 invited guests</p>
+          </div>
+          <div class="event-registration-period m-bottom16">4 attending, 1 on leave</div>
+
+          <div class="file-list">
+            <div class="file-item">
+              <span class="file-name">Joseph</span>
+              <span class="file-name">0900123456</span>
+              <span class="file-name text-center">Attending</span>
+            </div>
+            <div class="file-item">
+              <span class="file-name">De-Hua Liu</span>
+              <span class="file-name">0911223344</span>
+              <span class="file-name text-center">Attending</span>
+            </div>
+            <div class="file-item">
+              <span class="file-name">Fu-Cheng Guo</span>
+              <span class="file-name">0911223344</span>
+              <span class="file-name text-center">Attending</span>
+            </div>
+            <div class="file-item">
+              <span class="file-name">Ming-Ming Wang</span>
+              <span class="file-name">0911223344</span>
+              <span class="file-name text-center">Not Attending</span>
+            </div>
+            <div class="file-item">
+              <span class="file-name">Fu-Cheng Guo</span>
+              <span class="file-name">0911223344</span>
+              <span class="file-name text-center">Attending</span>
+            </div>
+
+          </div>
+        </section>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <script>
+    $(".transactiontype").on("click",function(){
+      $(".fadeinupbig").show();
+      $(".box").stop(true,true).animate({height:"100%"},500);
+    })
+  </script>
+  <script>
+      function closeForm() {
+        document.getElementById("fadeinupbig").style.display = "none";}
+  </script>
+    <script>
+            $(".ui-selectee").click(function () {
+             var $this = $(this);
+               if ($this.hasClass("active-cd")) {
+                   $this.removeClass("active-cd");
+               } else {
+                   $this.addClass("active-cd");
+               }
+               getDateSelectedValue() 
+           });
+    </script>  
+    </body>    
+</html>

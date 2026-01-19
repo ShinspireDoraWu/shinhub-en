@@ -1,0 +1,91 @@
+<html lang="en">
+    <head>        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+        ShinHub
+        </title><meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/announcement-pages.css" />
+        <link rel="stylesheet" href="css/simpleLightbox.min.css">
+        
+    </head>
+
+    <body class="bg-page">
+      <nav class="navbar">
+            <a href="index.html" class="nav-item">
+              <img src="images/home.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Home</div>
+            </a>
+            <a href="coupons-list.html" class="nav-item">
+              <img src="images/announcement.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Coupons</div>
+            </a>
+            <a href="activity-list.html" class="nav-item">
+              <img src="images/activity.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Events</div>
+            </a>
+            <a href="my.html" class="nav-item">
+              <img src="images/my.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Account</div>
+            </a>
+          </nav>
+          
+      <section class="page-header">
+        <a href="photo-list.html"><img src="images/back.svg"></a>
+        <h2>Event Highlights</h2>
+      </section>
+      <section class="container-page m-top68">
+          <h1 class="event-title">Harmonious Dialogue at Home and Workplace</h1>
+          <div class="event-datetime">
+            <img src="images/date-icon.svg" alt="" class="event-datetime-icon">
+            <div class="event-datetime-text">Aug 1, 2024 Sat 11:30</div>
+          </div>
+          <p>Event description, event description.</p>
+          <div class="tab-inner imageGallery1">
+          </div>
+          <div id="photo-list">
+              <ul class="photo-title">
+                  <li><a href="#tab01"><img src="images/photo-2.svg"></a></li>
+                  <li><a href="#tab02"><img src="images/photo-1.svg"></a></li>
+                </ul>
+                <div id="tab01" class="tab-inner imageGallery1">
+                    <a href="images/photo-img.jpg" title="Photo Description"><img src="images/photo-img.jpg" alt="Gallery image 1"></a>
+                    <a href="images/photo-img.jpg" title="Photo Description"><img src="images/photo-img.jpg" alt="Gallery image 2"></a>
+                    <a href="images/photo-img.jpg" title="Photo Description"><img src="images/photo-img.jpg" alt="Gallery image 3"></a>
+                    <a href="images/photo-img.jpg" title="Photo Description"><img src="images/photo-img.jpg" alt="Gallery image 4"></a>
+                </div>
+                <div id="tab02" class="tab-inner list-50 imageGallery1">
+                    <a href="images/photo-img.jpg" title="Photo Description"><img src="images/photo-img.jpg" alt="Gallery image 5"></a>
+                    <a href="images/photo-img.jpg" title="Photo Description"><img src="images/photo-img.jpg" alt="Gallery image 6"></a>
+                    <a href="images/photo-img.jpg" title="Photo Description"><img src="images/photo-img.jpg" alt="Gallery image 7"></a>
+                    <a href="images/photo-img.jpg" title="Photo Description"><img src="images/photo-img.jpg" alt="Gallery image 8"></a>
+                </div>
+
+            </div>
+  
+      </section>
+ 
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="js/simpleLightbox.min.js"></script>
+
+  <script>
+$(function(){
+    var $li = $('ul.photo-title li');
+        $($li. eq(0) .addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
+    
+        $li.click(function(){
+            $($(this).find('a'). attr ('href')).show().siblings ('.tab-inner').hide();
+            $(this).addClass('active'). siblings ('.active').removeClass('active');
+        });
+    });
+    </script>
+    <script>
+new SimpleLightbox({elements: '.imageGallery1 a'});
+    </script>
+    </body>    
+</html>

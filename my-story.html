@@ -1,0 +1,88 @@
+<html lang="en">
+    <head>        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+        ShinHub
+        </title><meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/announcement-pages.css" />
+    </head>
+
+    <body class="bg-page">
+      <nav class="navbar">
+            <a href="index.html" class="nav-item">
+              <img src="images/home.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Home</div>
+            </a>
+            <a href="coupons-list.html" class="nav-item">
+              <img src="images/announcement.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Coupons</div>
+            </a>
+            <a href="activity-list.html" class="nav-item">
+              <img src="images/activity.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Events</div>
+            </a>
+            <a href="my.html" class="nav-item">
+              <img src="images/my-hover.svg" alt="" class="nav-icon" />
+              <div class="nav-label active">Account</div>
+            </a>
+          </nav>
+          
+      <section class="page-header">
+        <a href="my.html"><img src="images/back.svg"></a>
+        <h2></h2>
+      </section>
+
+      <section class="container-page m-top68">
+
+              <h2 class="my-activities__label">From Novice to Leader — My Rotary Growth Journey</h2>
+              <p class="m-top4 m-bottom16">Michael Chang</p>
+
+          <article class="business-card">
+            <p class="blue-text m-top24">Background</p>
+            <p>I am Michael Chang, an entrepreneur who joined the Rotary Club in 2015. Initially, I joined to expand my network, but I didn't expect it to become a major turning point in my life.</p>
+
+            <p class="blue-text m-top24">Rotary Experience</p>
+            <p>In the Rotary Club, I have participated in many volunteer activities, from helping orphanages to organizing community clean-ups. Each activity has allowed me to feel the power of the team and the joy of service.</p>
+
+            <p class="blue-text m-top24">Achievements and Insights</p>
+            <p>In 2019, I was elected President of the Rotary Club and led fellow members to complete several large-scale public welfare projects. This experience not only improved my leadership skills but also made me believe more firmly in the importance of serving society.</p>
+
+            <p class="blue-text m-top24">Future Outlook</p>
+            <p>In the future, I hope to attract more young people to join the Rotary Club and contribute to society together. My goal is to make the Rotary Club an organization that constantly innovates and progresses, continuing to spread love and hope.</p>
+
+          </article>
+
+          
+      </section>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <script>
+    $(".transactiontype").on("click",function(){
+      $(".fadeinupbig").show();
+      $(".box").stop(true,true).animate({height:"100%"},500);
+    })
+  </script>
+  <script>
+      function closeForm() {
+        document.getElementById("fadeinupbig").style.display = "none";}
+  </script>
+    <script>
+            $(".ui-selectee").click(function () {
+             var $this = $(this);
+               if ($this.hasClass("active-cd")) {
+                   $this.removeClass("active-cd");
+               } else {
+                   $this.addClass("active-cd");
+               }
+               getDateSelectedValue() 
+           });
+    </script>  
+    </body>    
+</html>

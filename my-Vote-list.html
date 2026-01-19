@@ -1,0 +1,121 @@
+<html lang="en">
+    <head>        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+        ShinHub
+        </title><meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/announcement-pages.css" />
+    </head>
+
+    <body class="bg-page">
+      <nav class="navbar">
+            <a href="index.html" class="nav-item">
+              <img src="images/home.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Home</div>
+            </a>
+            <a href="coupons-list.html" class="nav-item">
+              <img src="images/announcement.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Coupons</div>
+            </a>
+            <a href="activity-list.html" class="nav-item">
+              <img src="images/activity.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Events</div>
+            </a>
+            <a href="my.html" class="nav-item">
+              <img src="images/my-hover.svg" alt="" class="nav-icon" />
+              <div class="nav-label active">Account</div>
+            </a>
+          </nav>
+          
+      <section class="page-header">
+        <a href="my.html"><img src="images/back.svg"></a>
+        <h2>Polls</h2>
+      </section>
+
+      <section class="container-page m-top68">
+      
+      <a href="my-Vote-Filled1.html" class="survey-card">
+      <div>
+       <div class="survey-title">Q2 Dinner Restaurant Poll</div>
+       <div class="survey-deadline">Deadline: 2025.06.20</div>
+      </div> 
+      <div class="person-card__action">
+       <div class="survey-status-row">
+       <span class="survey-status">
+        <span class="check"><img src="images/agree.svg"></span>Voted
+       </span>
+       <span class="survey-status-date">2025.06.21</span>
+       </div>
+      <img src="images/my-arrow1.svg" alt="" class="person-card__action-icon">
+      </div>
+      </a>
+
+      <a href="my-Vote-Filled2.html" class="survey-card">
+      <div> 
+       <div class="survey-title">Q2 Dinner Restaurant Vote</div>
+       <div class="survey-deadline">Deadline: 2025.06.20</div>
+      </div> 
+      <div class="person-card__action">
+       <div class="survey-status-row">
+       <span class="survey-status">
+        <span class="check"><img src="images/agree.svg"></span>Voted
+       </span>
+       <span class="survey-status-date">2025.06.21</span>
+       </div>
+      <img src="images/my-arrow1.svg" alt="" class="person-card__action-icon">
+      </div>
+      </a>
+
+      <a href="my-Vote.html" class="survey-card">
+       <div>
+       <div class="survey-title">Q3 Dinner Restaurant Vote</div>
+       <div class="survey-deadline">Deadline: 2025.07.20</div>
+       </div> 
+       <div class="person-card__action">
+       <img src="images/my-arrow1.svg" alt="" class="person-card__action-icon">
+      </div>
+      </a>
+
+      <a href="my-Vote.html" class="survey-card">
+       <div>
+       <div class="survey-title">August Overseas Trip Location Vote</div>
+       <div class="survey-deadline">Deadline: 2025.06.20</div>
+       </div> 
+       <div class="person-card__action">
+       <img src="images/my-arrow1.svg" alt="" class="person-card__action-icon">
+      </div>
+      </a>
+      
+      </section>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <script>
+    $(".transactiontype").on("click",function(){
+      $(".fadeinupbig").show();
+      $(".box").stop(true,true).animate({height:"100%"},500);
+    })
+  </script>
+  <script>
+      function closeForm() {
+        document.getElementById("fadeinupbig").style.display = "none";}
+  </script>
+    <script>
+            $(".ui-selectee").click(function () {
+             var $this = $(this);
+               if ($this.hasClass("active-cd")) {
+                   $this.removeClass("active-cd");
+               } else {
+                   $this.addClass("active-cd");
+               }
+               getDateSelectedValue() 
+           });
+    </script>  
+    </body>    
+</html>

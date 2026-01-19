@@ -1,0 +1,145 @@
+<html lang="en">
+    <head>        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+        ShinHub
+        </title><meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/jquery.modal.min.css" />
+    </head>
+
+    <body class="bg-page">
+      <nav class="navbar">
+        <a href="index.html" class="nav-item">
+          <img src="images/home.svg" alt="" class="nav-icon" />
+          <div class="nav-label">Home</div>
+        </a>
+        <a href="coupons-list.html" class="nav-item">
+          <img src="images/announcement.svg" alt="" class="nav-icon" />
+          <div class="nav-label">Coupons</div>
+        </a>
+        <a href="activity-list.html" class="nav-item">
+          <img src="images/activity.svg" alt="" class="nav-icon" />
+          <div class="nav-label">Events</div>
+        </a>
+        <a href="my.html" class="nav-item">
+            <img src="images/my-hover.svg" alt="" class="nav-icon" />
+            <div class="nav-label active">Account</div>
+          </a>
+      </nav>
+      
+          
+      <section class="page-header">
+        <a href="announcement-list.html"><img src="images/back.svg"></a>
+        <h2>Initiate Event</h2>
+      </section>
+
+<section class="container-my m-top68">
+
+  
+  <div class="button-group-w100 m-bottom16">
+    <a href="start-add.html" class="event-register-button">
+      <img src="images/new-icon.svg">
+      Add Meeting/Event</a>
+ </div>
+
+  
+  <div class="activity-list">
+  <button href="start-pages.html" class="activities-content w-100">
+      <h1 class="event-title">Annual Event Discussion</h1>
+     
+      <div class="event-datetime">
+       <img src="images/date-icon.svg" alt="" class="event-datetime-icon" />
+       <div class="event-datetime-text">2024.05.05 Sun 11:30 - 2024.05.05 Sun 12:30</div>
+      </div>
+     
+      <div class="event-location">
+       <img src="images/map-icon.svg" alt="" class="event-location-icon" />
+       <div class="event-location-text">TASTY Steak Taipei Fuxing Branch</div>
+      </div>
+     
+     <div class="button-group-w100">
+        <a href="start-pages.html" class="event-more-info-button">View Details</a>
+     </div>
+  </button>
+
+  <button href="start-pages.html" class="activities-content w-100">
+      <h1 class="event-title">Harmonious Dialogue at Home and Workplace</h1>
+     
+      <div class="event-datetime">
+       <img src="images/date-icon.svg" alt="" class="event-datetime-icon" />
+       <div class="event-datetime-text">2024.05.04 Sat 11:30</div>
+      </div>
+     
+      <div class="event-location">
+       <img src="images/map-icon.svg" alt="" class="event-location-icon" />
+       <div class="event-location-text">TASTY Steak Taipei Fuxing Branch</div>
+      </div>
+     
+     <div class="button-group button-group-w100">
+        <a href="start-pages.html" class="event-more-info-button">View Details</a>
+     </div>
+  </button>
+
+  </div>
+  </section>
+  <nav class="pagination">
+      <a href="#" class="prev-page">
+        <img src="images/previous.svg" alt="Previous page" class="arrow-icon">
+        <span class="page-label">Prev</span>
+      </a>
+      <div class="page-numbers">
+        <span class="current-page">2</span>
+        ｜
+        <span>10</span>
+      </div>
+      <a href="#" class="next-page">
+        <span class="page-label">Next</span>
+        <img src="images/Next.svg" alt="Next page" class="arrow-icon">
+      </a>
+    </nav>
+  <div class="fadeinupbig" id="fadeinupbig">
+    <div class="box">
+        <div class="sort-container">
+          <div class="sort-title"> 
+          <h2>Sort By</h2><a type="button" onclick="closeForm()"><img src="images/close.svg"></a>
+          </div> 
+          <ol class="take-meal">
+              <li class="ui-selectee" data-value="1">Event Time: Newest to Oldest</li>
+              <li class="ui-selectee" data-value="2">Event Time: Oldest to Newest</li>
+          </ol>
+        </div>
+        
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <script>
+    $(".transactiontype").on("click",function(){
+      $(".fadeinupbig").show();
+      $(".box").stop(true,true).animate({height:"100%"},500);
+    })
+  </script>
+  <script>
+      function closeForm() {
+        document.getElementById("fadeinupbig").style.display = "none";}
+  </script>
+    <script>
+            $(".ui-selectee").click(function () {
+             var $this = $(this);
+               if ($this.hasClass("active-cd")) {
+                   $this.removeClass("active-cd");
+               } else {
+                   $this.addClass("active-cd");
+               }
+               getDateSelectedValue() 
+           });
+    </script>  
+    </body>    
+</html>
