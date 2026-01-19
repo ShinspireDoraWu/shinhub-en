@@ -1,0 +1,192 @@
+<html lang="en">
+    <head>        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+        ShinHub
+        </title><meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/announcement-pages.css" />
+        <link rel="stylesheet" href="css/jquery.modal.min.css" />
+    </head>
+
+    <body class="bg-page">
+      <div class="pages-sign-up"><a href="#sign-up" rel="modal:open" class="event-more-info-button">Cancel Registration</a></div>
+      <nav class="navbar">
+            <a href="index.html" class="nav-item">
+              <img src="images/home.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Home</div>
+            </a>
+            <a href="coupons-list.html" class="nav-item">
+              <img src="images/announcement.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Coupons</div>
+            </a>
+            <a href="activity-list.html" class="nav-item">
+              <img src="images/activity.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Events</div>
+            </a><!--
+            <a href="map-list-1.html" class="nav-item">
+              <img src="images/map.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Pro Map</div>
+            </a>-->
+            <a href="my.html" class="nav-item">
+              <img src="images/my.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Account</div>
+            </a>
+          </nav>
+          
+      <section class="page-header">
+        <a href="activity-list.html"><img src="images/back.svg"></a>
+        <h2>Upcoming Events</h2>
+      </section>
+
+      <section class="container-page m-top68">
+          <h1 class="event-title">Harmonious Dialogue at Home & Work</h1>
+          <span class="event-tag">#GourmetClub</span>
+          <div class="event-datetime">
+            <img src="images/date-icon.svg" alt="" class="event-datetime-icon">
+            <div class="event-datetime-text">Aug 1, 2024 Sat 11:30</div>
+          </div>
+          <div class="event-location">
+           <img src="images/map-icon.svg" alt="" class="event-location-icon">
+           <div class="event-location-text">Tasty Steak (Taipei Fuxing)</div>
+          </div>
+          <div class="event-registration-period m-bottom16">Registration: 2024.04.01-05.01</div>
+          <img src="images/banner.png" alt="Event image" class="event-image">
+          <p class="announcement-content">
+              The Joint Meeting of the 7th Division invites Mr. Li Chong-jian to speak on "Harmonious Dialogue at Home and in the Workplace." The speaker shares common parent-child communication styles in daily life, noting that commands and lectures are often just habitual "I speak, you listen" scenarios, rather than true two-way dialogue.
+              True dialogue starts with listening. The goal is not to make someone obey, but through mindful listening and sincere exchange, to explore potential difficulties, accept each other's perspectives, and eventually walk toward a shared goal together.
+          </p>    
+          
+          <div class="my-activities">
+            <img src="images/registration-icon.svg"/>
+            <h2 class="my-activities__label">Registration Details</h2>
+          </div>
+          <div class="file-list">
+            <div class="registration-list">
+              <div class="registration-title">Meal Choice:</div>
+              <div class="registration-text">Steak</div>
+            </div>
+            <div class="registration-list">
+              <div class="registration-title">Attendees:</div>
+              <div class="registration-text">5 People</div>
+            </div>
+            <div class="registration-list">
+              <div class="registration-title">Note:</div>
+              <div class="registration-text">Medium Rare</div>
+            </div>
+          </div>
+
+
+          <div class="my-activities">
+              <img src="images/Users.svg"/>
+              <h2 class="my-activities__label">Participants</h2>
+          </div>
+
+          <div class="file-list">
+            <a class="file-item">
+              <span class="file-name">Joseph</span>
+            </a>
+            <a class="file-item">
+              <span class="file-name">Jimmy</span>
+            </a>
+            <a class="file-item">
+              <span class="file-name leave">PP Venson</span>
+            </a>
+            <a class="file-item">
+                <span class="file-name">Albert</span>
+              </a>
+              <a class="file-item">
+                <span class="file-name">Patrick</span>
+              </a>
+              <a class="file-item">
+                <span class="file-name">Perennial</span>
+              </a>
+          </div>
+        </section>
+
+                  <div id="sign-up" class="modal meal-details event-sign-up">
+                      <h2 class="event-title text-left">Harmonious Dialogue at Home & Work</h2>
+            
+                        <div class="event-datetime">
+                          <img src="images/date-icon.svg" alt="" class="event-datetime-icon" />
+                          <div class="event-datetime-text">Aug 1, 2024 Sat 11:30</div>
+                         </div>
+                        
+                         <div class="event-location">
+                          <img src="images/map-icon.svg" alt="" class="event-location-icon" />
+                          <div class="event-location-text">Tasty Steak (Taipei Fuxing)</div>
+                         </div>
+                         <div class="SelectStyle2  m-top12">
+                          <select name="Attendees">
+                              <option>Select number of participants</option>
+                              <option>01</option>
+                              <option>02</option>
+                              <option>03</option>
+                              <option>04</option>
+                              <option>05</option>
+                          </select>
+                         </div>
+            
+                        <p class="text-left m-top12 m-bottom8">Note</p>
+                        <textarea id="remarks" class="remarks-input" placeholder="Any messages for us?"></textarea>
+            
+                        <div class="button-group">
+                          <a href="#" rel="modal:close" class="event-more-info-button">Back to List</a>
+                          <a href="#sign-up2" rel="modal:open" class="event-register-button">Confirm Participation</a>
+                        </div>
+                    </div>
+            
+            
+                      <div id="sign-up2" class="modal meal-details event-sign-up">
+                        <img src="images/success.svg" style="width:100px;height:100px;">
+                        <div class="blue-text text-s24 m-top16 m-bottom24">Registration Successful</div>
+                        <h2 class="event-title text-left">Harmonious Dialogue at Home & Work</h2>
+              
+                          <div class="event-datetime">
+                            <img src="images/date-icon.svg" alt="" class="event-datetime-icon" />
+                            <div class="event-datetime-text">Aug 1, 2024 Sat 11:30</div>
+                           </div>
+                          
+                           <div class="event-location">
+                            <img src="images/map-icon.svg" alt="" class="event-location-icon" />
+                            <div class="event-location-text">Tasty Steak (Taipei Fuxing)</div>
+                           </div>
+              
+                          <p class="text-left m-top12 m-bottom24 text-s18">Attendees: <samp class="blue-text">5 People</samp></p>
+              
+                          <a href="my-activity.html" class="event-register-button">My Activities</a>
+                      </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <script>
+    $(".transactiontype").on("click",function(){
+      $(".fadeinupbig").show();
+      $(".box").stop(true,true).animate({height:"100%"},500);
+    })
+  </script>
+  <script>
+      function closeForm() {
+        document.getElementById("fadeinupbig").style.display = "none";}
+  </script>
+    <script>
+            $(".ui-selectee").click(function () {
+             var $this = $(this);
+               //Step 1: Highlight selection    
+               if ($this.hasClass("active-cd")) {
+                   $this.removeClass("active-cd");
+               } else {
+                   $this.addClass("active-cd");
+               }
+          
+               getDateSelectedValue() 
+               
+           });
+    </script>  
+    </body>    
+</html>

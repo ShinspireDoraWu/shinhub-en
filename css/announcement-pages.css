@@ -1,0 +1,461 @@
+
+/*公告通知*/
+.announcement-meta {
+  display: flex;
+  gap: 11px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.announcement-date {
+  margin: auto 0;
+  color: #000;
+  font-family: 'Noto Sans TC', sans-serif;
+  letter-spacing: 0.96px;
+  flex: 1;
+}
+
+.announcement-category {
+  padding: 2px 6px;
+  background-color: #dab866;
+  color: #fff;
+  font-family: 'Noto Sans TC', sans-serif;
+  text-align: center;
+  letter-spacing: 0.64px;
+  border-radius: 14px;
+}
+
+.announcement-subtitle {
+  margin-top: 11px;
+  color: #000;
+  font: 500 18px 'Noto Sans TC', sans-serif;
+  letter-spacing: 1.08px;
+}
+
+.announcement-content {
+  margin-top: 16px;
+  color: #000;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.96px;
+}
+
+.file-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid rgba(22, 24, 25, 0.2);
+  border-radius: 8px;
+  color: #161819;
+  letter-spacing: 0.96px;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;font-weight: bold;
+  align-items: center;
+  gap:4px;
+  padding: 12px 0;
+  background-color: #fff;border-bottom:1px solid #DEE4EA; 
+}
+.file-item p{font-weight: normal;opacity:0.8;}
+.file-item:last-child{
+  border-bottom:none; 
+}
+
+.file-name {
+    flex: 1;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    display: block;
+}
+
+.file-icon {
+  width:32px;
+}
+
+/*近期活動*/
+.pages-sign-up{position: fixed;bottom:78px;width:100%;padding:8px 16px 16px 16px;z-index:3;
+  background: linear-gradient(180deg, rgba(242, 244, 247, 0.6) 0%, rgba(242, 244, 247, 1) 30%);}
+.leave{color:#DE1616;}
+
+/*我的*/
+.profile-image {
+  width: 100%;
+  max-width: 256px;
+  object-fit: cover;margin:16px auto 0 auto;height:180px;
+  object-position: center;display: block;
+}
+.profile-info {
+  display: flex;
+  gap: 4px;
+  font-size: 16px;
+  letter-spacing: 0.96px;
+  padding-top: 8px;
+}
+
+.profile-title {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #161819;
+  font-weight: 400;
+  padding:6px 8px 0 8px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.profile-tags {
+  display:inline-block;
+  gap: 8px;
+  font-size: 16px;
+  color: #161819;
+  font-weight: 400;
+  letter-spacing: 0.96px;
+  padding: 8px 0 24px;
+}
+
+.tag {
+  background-color: rgba(22, 24, 25, 0.12);
+  padding: 2px 8px;margin-bottom:8px;display: inline-block;
+  border-radius: 4px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.menu-item {
+  display: flex;position: relative;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #161819;
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid rgba(22, 24, 25, 0.2);
+  box-shadow: 0px 1px 0px 0px #dee4ea;
+  margin-bottom: 8px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.menu-item.highlighted {
+  background-color: #fcfaf3;
+  border-color: #dab866;
+  font-weight: 700;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.menu-label {
+  flex: 1;
+}
+
+.menu-arrow {
+  width: 8px;
+  height: 15px;
+}
+
+.remind{width:10px;height:10px;background:#DE1616;border-radius:5px;border:2px solid #fff;position: absolute;top:13px;left:32px;}
+
+/*我的活動*/
+.btn-wrapper{display:flex;margin-bottom:12px;overflow: overlay;white-space: nowrap;-webkit-overflow-scrolling: touch;}
+.btn-wrapper .btn{padding:8px 24px;color:rgb(22,24,25,0.5);background:#ECECED;border:1px solid rgb(22,24,25,0.5);
+  border-radius:22px;margin-right:8px;flex-shrink: 0;display: inline-block;}
+.btn-wrapper .active{color:#00559E;background:rgb(0,85,158,0.08);border:1px solid #00559E;}
+/* 隱藏滾動條（選用，讓畫面更簡潔） */
+.btn-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.event-canceled{color:#DE1616;font-weight:bold;background:#FCE8E8;margin:0 0 4px 0;padding:4px 8px;}
+
+/*個人通訊錄*/
+.business-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(22, 24, 25, 0.2);
+  position: relative;background:#fff url(../images/a-bg.png) no-repeat top right;background-size:180px;  
+  width: 100%;
+  padding: 12px 8px;margin-bottom:16px; 
+}
+
+.profile-section {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  padding: 0 8px;
+}
+
+.profile-image-page {
+  object-fit: contain;
+  object-position: center;
+  width: 311px;height:64px;
+}
+
+.profile-name {
+  font-family: 'Noto Sans TC', sans-serif;
+  margin-top: 8px;
+}
+
+.info-section {
+  position: relative;
+  justify-content: center;
+  box-shadow: 0px 1px 0px 0px #f2f4f7;
+  display: flex;
+  margin-top: 8px;
+  flex-direction: column;
+  padding: 4px 8px;
+}
+
+.info-label {
+  color: #00559e;
+  letter-spacing: 0.32px;
+  font: 16px 'Noto Sans', sans-serif;
+}
+
+.info-value {
+  color: #161819;
+  letter-spacing: 0.36px;
+  margin-top: 4px;
+  font: 18px 'Noto Sans', sans-serif;
+}
+
+.address-section {
+  position: relative;
+  justify-content: center;
+  box-shadow: 0px 1px 0px 0px #f2f4f7;
+  background-color: #fff;
+  display: flex;
+  margin-top: 8px;
+  flex-direction: column;
+  padding: 4px 8px;
+}
+
+.email-section {
+  position: relative;
+  justify-content: center;
+  background-color: #fff;
+  display: flex;
+  margin-top: 8px;
+  flex-direction: column;
+  white-space: nowrap;
+  padding: 4px 8px;
+}
+
+/*通訊錄列表*/
+.person-card {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(22, 24, 25, 0.2);background:#fff url(../images/a-bg.png) no-repeat top right;background-size:180px;
+  position: relative;
+  gap: 8px;
+  white-space: nowrap;
+  padding: 12px;margin-bottom:8px; 
+}
+
+
+.person-card__content {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  color: #000;
+  letter-spacing: 0.32px;
+  flex: 1;
+}
+
+.person-card__avatar {
+  object-fit: cover;border-radius:4px;
+  object-position: center;
+  width: 64px;height:64px;
+}
+
+.person-card__name {
+  font-weight:bold;
+  margin: auto 0;
+}
+
+.person-card__action {
+  position: relative;
+  justify-content: flex-end;
+  display: flex;
+  gap: 10px;
+  color: #00559e;
+  letter-spacing: 0.96px;
+  margin: auto 0;
+}
+
+.person-card__action-text {
+  color: #00559e;
+}
+
+.person-card__action-icon {
+  aspect-ratio: 0.57;
+  object-fit: contain;
+  object-position: center;
+  width: 8px;
+  fill: #00559e;
+  stroke-width: 1px;
+  stroke: #00559e;
+  margin: auto 0;
+}
+
+/*問卷列表*/
+
+.survey-card {
+  background: #fff url(../images/a-bg.png) no-repeat top right;
+  background-size: 180px;
+  border-radius:8px;
+  border: 1px solid rgba(22, 24, 25, 0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  margin-bottom:8px;
+  padding: 12px 12px 12px 12px;
+  position: relative;
+  display: flex;justify-content: space-between;align-items: center;
+}
+.survey-title {
+  font-size: 1rem;
+  font-weight:500;
+  margin-bottom:4px;
+}
+.survey-deadline {
+  display: inline-block;
+  background: #e7edf3;
+  color: #333;
+  border-radius:4px;
+  padding: 4px 8px;
+  font-size: 1rem;
+}
+.survey-status-row {
+  display: flex;flex-wrap: wrap;
+  align-items: center;width:88px;
+  margin-top: 6px;
+}
+.survey-status {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 1rem;
+  margin-right: 12px;
+}
+.survey-status .check {
+  color: #888;
+  font-size: 1.2em;
+  margin-right: 4px;
+}
+.survey-status-date {
+  color: #666;
+  font-size: 1rem;
+}
+.survey-arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8a8a8a;
+  font-size: 1.6em;
+}
+
+/*單選題選項*/
+.survey-radio-list {
+  padding: 0;
+  list-style: none;
+}
+.survey-radio-list li{border-bottom:1px solid #DEE4EA;}
+.survey-radio-list li:last-child{border-bottom:none;}
+.survey-radio-item {
+  display: flex;
+  align-items: center;
+  padding:8px 0 8px 0;
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+}
+.survey-radio-item:last-child {
+  border-bottom: none;
+}
+.survey-radio-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #1761a0;
+  border-radius: 50%;
+  margin-right:12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s;
+}
+.survey-radio-input {
+  display: none;
+}
+.survey-radio-input:checked + .survey-radio-custom {
+  border-color: #1761a0;
+}
+.survey-radio-input:checked + .survey-radio-custom::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #1761a0;
+  border-radius: 50%;
+  display: block;
+}
+.survey-radio-custom::after {
+  content: '';
+  display: none;
+}
+.survey-radio-input:checked + .survey-radio-custom::after {
+  display: block;
+}
+
+/*不能填寫*/
+.survey-radio-input:disabled + .survey-radio-custom {
+  border-color: #b0b0b0;
+  background: #f5f5f5;
+}
+.survey-radio-input:disabled + .survey-radio-custom::after {
+  background: #b0b0b0;
+}
+.survey-radio-item2 {
+  
+  cursor: not-allowed;
+}
+.survey-radio-item2 {
+  display: flex;
+  align-items: center;
+  padding:8px 0 8px 0;
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #888;
+}
+.survey-radio-item2:last-child {
+  border-bottom: none;
+}
+.survey-radio-input:disabled ~ span,
+.survey-radio-input:disabled ~ .survey-radio-custom {
+  pointer-events: none;
+}
+
+
+.filled-box{
+    display: flex;text-align: center;align-items: center;
+    justify-content: center;background: #e7edf3;
+    color: #161819;border-radius: 4px;
+    font-size: 1rem;padding: 8px;
+    margin-top:12px;
+}
+.filled-box img{margin-right:8px;width:20px;}

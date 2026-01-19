@@ -1,0 +1,146 @@
+<html lang="en">
+    <head>        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+        ShinHub
+        </title><meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/announcement-pages.css" />
+    </head>
+
+    <body class="bg-page">
+      <nav class="navbar">
+            <a href="index.html" class="nav-item">
+              <img src="images/home.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Home</div>
+            </a>
+            <a href="coupons-list.html" class="nav-item">
+              <img src="images/announcement.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Coupons</div>
+            </a>
+            <a href="activity-list.html" class="nav-item">
+              <img src="images/activity.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Events</div>
+            </a>
+            <!--
+            <a href="map-list-1.html" class="nav-item">
+              <img src="images/map.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Career Map</div>
+            </a>-->
+            <a href="my.html" class="nav-item">
+              <img src="images/my-hover.svg" alt="" class="nav-icon" />
+              <div class="nav-label active">Account</div>
+            </a>
+          </nav>
+          
+      <section class="page-header">
+        <a href="my.html"><img src="images/back.svg"></a>
+        <h2>Member Details</h2>
+      </section>
+
+      <section class="container-page m-top68">
+          <article class="business-card">
+              <div class="profile-section">
+                <img src="images/Rectangle.png" alt="Profile image" class="profile-image profile-image-page" />
+                <h2 class="profile-name">Benison Hsu (DG Benison)</h2>
+              </div>
+            
+              <div class="info-section">
+                <p class="info-label">Birthday</p>
+                <p class="info-value">1962.11.08</p>
+              </div>
+            
+              <div class="info-section">
+                <p class="info-label">Mobile</p>
+                <p class="info-value">0936-334-558</p>
+              </div>
+            
+              <div class="info-section">
+                <p class="info-label">Classification</p>
+                <p class="info-value">Air & Sea Freight Forwarding</p>
+              </div>
+            
+              <div class="info-section">
+                <p class="info-label">Company</p>
+                <p class="info-value">Harmony International Cultural Enterprise Co., Ltd.</p>
+              </div>
+            
+              <div class="address-section">
+                <p class="info-label">Company Address</p>
+                <p class="info-value">10F, No. 230-4, Sec. 2, Beixin Rd., Xindian Dist., New Taipei City 23143</p>
+              </div>
+            
+              <section class="info-section">
+                <p class="info-label">Company Phone</p>
+                <p class="info-value">2914-5158</p>
+              </section>
+            
+              <div class="info-section">
+                <p class="info-label">Fax</p>
+                <p class="info-value">2511-4979</p>
+              </div>
+            
+              <div class="email-section">
+                <p class="info-label">E-mail</p>
+                <p class="info-value">Juhsuan1025@gmail.com</p>
+              </div>
+          </article>
+
+          <div class="my-activities">
+              <h2 class="my-activities__label">Spouse Information</h2>
+          </div>
+          <article class="business-card">
+              <div class="profile-section">
+                <img src="images/Rectangle.png" alt="Profile image" class="profile-image profile-image-page" />
+                <h2 class="profile-name">Joyce Liu (Joyce)</h2>
+              </div>
+            
+              <div class="info-section">
+                <p class="info-label">Birthday</p>
+                <p class="info-value">1966.10.25</p>
+              </div>
+              <div class="info-section">
+                <p class="info-label">Mobile</p>
+                <p class="info-value">0936-334-558</p>
+              </div>
+              <div class="email-section">
+                <p class="info-label">Wedding Anniversary</p>
+                <p class="info-value">1986.10.25</p>
+              </div>
+          </article>
+          <a href="my-story.html" class="event-register-button">My Story</a>
+      </section>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <script>
+    $(".transactiontype").on("click",function(){
+      $(".fadeinupbig").show();
+      $(".box").stop(true,true).animate({height:"100%"},500);
+    })
+  </script>
+  <script>
+      function closeForm() {
+        document.getElementById("fadeinupbig").style.display = "none";}
+  </script>
+    <script>
+            $(".ui-selectee").click(function () {
+             var $this = $(this);
+               //Step 1: Highlight selection    
+               if ($this.hasClass("active-cd")) {
+                   $this.removeClass("active-cd");
+               } else {
+                   $this.addClass("active-cd");
+               }
+          
+               getDateSelectedValue() 
+               
+           });
+    </script>  
+    </body>    
+</html>

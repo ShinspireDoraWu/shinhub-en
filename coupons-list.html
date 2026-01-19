@@ -1,0 +1,196 @@
+<html lang="en">
+    <head>        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+        ShinHub 
+        </title><meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/announcement-pages.css" />
+        <link rel="stylesheet" href="css/jquery.modal.min.css" />
+    </head>
+
+    <body class="bg-page">
+      <nav class="navbar">
+            <a href="index.html" class="nav-item">
+              <img src="images/home.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Home</div>
+            </a>
+            <a href="coupons-list.html" class="nav-item">
+              <img src="images/announcement-hover.svg" alt="" class="nav-icon" />
+              <div class="nav-label active">Coupons</div>
+            </a>
+            <a href="activity-list.html" class="nav-item">
+              <img src="images/activity.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Events</div>
+            </a>
+            <!--
+            <a href="map-list-1.html" class="nav-item">
+              <img src="images/map.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Pro Map</div>
+            </a>-->
+            <a href="my.html" class="nav-item">
+              <img src="images/my.svg" alt="" class="nav-icon" />
+              <div class="nav-label">Account</div>
+            </a>
+          </nav>
+          
+      <section class="area-director-card">
+        <img src="images/logo.svg" alt="Area Director" class="area-director-image" />
+        <div class="area-director-details">
+          <div class="area-director-info">
+            <h3 class="area-director-title">District Governor</h3>
+            <p class="area-director-name">Hsu Hsu-Hui</p>
+          </div>
+          <img src="images/Vector.svg" alt="Area Director Avatar" class="area-director-avatar" />
+        </div>
+      </section>
+
+<section class="container-page">
+  <div class="section-header">
+      <img src="images/BookmarkSimple.svg" alt="Recent activities icon"  class="header-icon"/>
+      <h2 class="my-activities__label">Get Coupons</h2>
+  </div>
+
+
+    <div class="btn-wrapper">           
+      <button
+      class="btn active"
+      data-images-toggle="three-months">
+      Uni-President
+      </button>  
+      <button
+      class="btn"
+      data-images-toggle="six-months">
+      McDonald's
+      </button>
+      <button
+      class="btn"
+      data-images-toggle="all">
+      KFC
+      </button>
+      
+    </div>
+
+  <div class="search-container">
+      <div class="search-input">
+        <input for="search-input" class="visually-hidden" placeholder="Coupon keywords...">
+        <img src="images/search-icon.svg" alt="Search icon" class="search-icon" />
+      </div>
+      <div class="sort-button transactionType">
+        <span class="sort-label">Oldest</span>
+        <img src="images/sort-icon.svg" alt="Sort icon" class="sort-icon" />
+      </div>
+  </div>
+
+  <div class="filter-tag"><img src="images/remove.svg">Filtered Merchants</div>
+
+  <div class="activity-list">
+  <button href="activity-pages.html" class="activities-content">
+      <img src="images/coupons-banner.png" alt="Event image" class="event-image">
+      <h1 class="event-title">618 Mid-Year Sale Gift</h1>
+
+     <div class="event-registration-period">Valid Period: Aug 4, 2024 Sat 11:30 - Aug 5, 2024 Sun 14:30</div>
+     
+     <div class="button-group">
+        <a href="get-coupons.html" class="event-more-info-button">Details</a>
+        <a href="#sign-up" rel="modal:open" class="event-register-button">Get Coupon</a>
+     </div>
+  </button>
+
+  <button href="activity-pages.html" class="activities-content">
+    <div class="finished">
+      <div class="finished-mask"><div class="finished-text">Opening Aug 1, 2024 </div></div>
+    <img src="images/coupons-banner.png" alt="Event image" class="event-image">
+    </div>
+    <h1 class="event-title">8/8 Summer Giveaway</h1>
+
+   <div class="event-registration-period">Valid Period: Aug 4, 2024 Sat 11:30 - Aug 5, 2024 Sun 14:30</div>
+   
+   <div class="button-group">
+      <a href="get-coupons-soon.html" class="event-more-info-button">Details</a>
+      <a href="#" class="disabled-button">Coming Soon</a>
+   </div>
+  </button>
+
+  <button href="activity-pages.html" class="activities-content">
+    <div class="finished">
+      <div class="finished-mask"><div class="finished-text">Out of Stock</div></div>
+    <img src="images/coupons-banner.png" alt="Event image" class="event-image">
+    </div>
+    <h1 class="event-title">618 Mid-Year Sale Gift</h1>
+
+   <div class="event-registration-period">Valid Period: Jun 1, 2024 - Jun 30, 2024</div>
+
+   <div class="button-group">
+      <a href="get-coupons-complete.html" class="event-more-info-button">Details</a>
+      <a href="#get-coupons-complete" rel="modal:open" class="disabled-button">Fully Redeemed</a>
+   </div>
+  </button>
+  </div>
+
+  </section>
+
+  <div class="fadeinupbig" id="fadeinupbig">
+    <div class="box">
+        <div class="sort-container">
+          <div class="sort-title"> 
+          <h2>Sort By</h2><a type="button" onclick="closeForm()"><img src="images/close.svg"></a>
+          </div> 
+          <ol class="take-meal">
+              <li class="ui-selectee" data-value="1">Date (New to Old)</li>
+              <li class="ui-selectee" data-value="2">Date (Old to New)</li>
+          </ol>
+        </div>
+        
+    </div>
+  </div>
+
+      <div id="sign-up" class="modal meal-details event-sign-up">
+          <img src="images/success.svg" style="width:100px;height:100px;">
+          <h2 class="blue-text text-s24 m-top16 m-bottom24">Claimed Successfully</h2>
+            <p class="m-top12 m-bottom8">"618 Mid-Year Sale Gift" has been added to your wallet.</p>
+            <a href="my-coupons.html" class="event-register-button">Go to Wallet</a>
+        </div>
+
+        <div id="get-coupons-complete" class="modal meal-details event-sign-up">
+          <img src="images/fail.svg" style="width:100px;height:100px;">
+          <h2 class="text-s24 m-top16 m-bottom24">Out of Stock</h2>
+            <a href="#" rel="modal:close" class="event-more-info-button">Close</a>
+        </div>
+
+        <div id="max" class="modal meal-details event-sign-up">
+          <img src="images/fail.svg" style="width:100px;height:100px;">
+          <h2 class="text-s24 m-top16 m-bottom24">Limit Reached</h2>
+            <a href="#" rel="modal:close" class="event-more-info-button">Close</a>
+        </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <script>
+    $(".transactionType").on("click",function(){
+      $(".fadeinupbig").show();
+      $(".box").stop(true,true).animate({height:"100%"},500);
+    })
+  </script>
+  <script>
+      function closeForm() {
+        document.getElementById("fadeinupbig").style.display = "none";}
+  </script>
+    <script>
+            $(".ui-selectee").click(function () {
+             var $this = $(this);
+               if ($this.hasClass("active-cd")) {
+                   $this.removeClass("active-cd");
+               } else {
+                   $this.addClass("active-cd");
+               }
+               getDateSelectedValue() 
+           });
+    </script>  
+    </body>    
+</html>
